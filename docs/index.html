@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +13,7 @@
 
     <aside class="sidebar">
       <div class="brand">
-        <div class="brand-icon">G</div>
+        <div class="brand-icon">P</div>
         <div>
           <h2>PINOY CLIENT</h2>
           <span>MOBILE CONTROL</span>
@@ -25,18 +24,20 @@
         <p class="nav-label">WORKSPACE</p>
         <a class="nav-link active" href="#dashboard">▦ Dashboard</a>
         <a class="nav-link" href="#monitor">◉ Connection Monitor</a>
+        <a class="nav-link" href="#minecraft">◆ Minecraft Connection</a>
         <a class="nav-link" href="#relay">⌁ Relay</a>
-        <a class="nav-link" href="#settings">⚙ Settings</a>
+        <a class="nav-link" href="#settings">⚙ System Logs</a>
       </nav>
 
       <div class="sidebar-bottom">
         <span class="status-dot"></span>
         <span>WEB INTERFACE</span>
-        <small>v1.0</small>
+        <small>v1.1</small>
       </div>
     </aside>
 
     <main class="main-content">
+
       <header class="topbar">
         <div>
           <p class="eyebrow">PINOY CLIENT / CONTROL CENTER</p>
@@ -52,11 +53,12 @@
         <div>
           <p class="eyebrow">MINECRAFT BEDROCK EDITION</p>
           <h2>Welcome to <span>Pinoy Client.</span></h2>
-          <p>Monitor your mobile relay and connection status.</p>
+          <p>Monitor your mobile relay and Minecraft connection.</p>
         </div>
-        <div class="welcome-mark">G</div>
+        <div class="welcome-mark">P</div>
       </section>
 
+      <!-- CONNECTION MONITOR -->
       <section class="section" id="monitor">
         <div class="section-heading">
           <div>
@@ -87,11 +89,75 @@
         </div>
       </section>
 
+      <!-- MINECRAFT CONNECTION -->
+      <section class="section" id="minecraft">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">MINECRAFT BEDROCK</p>
+            <h2>Minecraft Connection</h2>
+          </div>
+          <span class="server-tag">LOCAL RELAY</span>
+        </div>
+
+        <div class="server-card">
+          <div class="server-header">
+            <div>
+              <span class="card-label">CONNECTION DETAILS</span>
+              <h3>Connect through PINOY CLIENT</h3>
+            </div>
+            <span class="offline-label">● WAITING</span>
+          </div>
+
+          <div class="server-details">
+            <div>
+              <span>PHONE IP ADDRESS</span>
+              <strong>Check Gato App</strong>
+            </div>
+
+            <div>
+              <span>PORT</span>
+              <strong>19132</strong>
+            </div>
+
+            <div>
+              <span>RELAY</span>
+              <strong>GatoRelay</strong>
+            </div>
+          </div>
+
+          <p class="server-note">
+            Your phone's actual local IP address is displayed
+            inside the Gato Client Android app.
+          </p>
+
+          <div class="connection-instructions">
+            <h3>How to connect</h3>
+
+            <ol>
+              <li>Open the Gato Client Android app.</li>
+              <li>Open the How to Connect screen.</li>
+              <li>Find and copy the displayed phone IP address.</li>
+              <li>Open Minecraft Bedrock Edition.</li>
+              <li>Go to the Servers tab and add a server.</li>
+              <li>Enter your phone IP address.</li>
+              <li>Enter port <strong>19132</strong>.</li>
+              <li>Save and try connecting.</li>
+            </ol>
+
+            <p>
+              For another device, it normally needs to be on the
+              same Wi-Fi network as the phone running GatoRelay.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIFeboat AND RELAY -->
       <section class="section" id="relay">
         <div class="section-heading">
           <div>
             <p class="eyebrow">NETWORK INFORMATION</p>
-            <h2>Server & Relay</h2>
+            <h2>Server &amp; Relay</h2>
           </div>
         </div>
 
@@ -109,10 +175,12 @@
               <span>HOST</span>
               <strong>play.lbsg.net</strong>
             </div>
+
             <div>
               <span>PORT</span>
               <strong>19132</strong>
             </div>
+
             <div>
               <span>PROXY</span>
               <strong>GatoRelay</strong>
@@ -120,12 +188,13 @@
           </div>
 
           <p class="server-note">
-            Server details are configured for reference.
-            This dashboard does not test the connection yet.
+            These are the configured destination server details.
+            Live connection testing is not integrated yet.
           </p>
         </div>
       </section>
 
+      <!-- SYSTEM LOGS -->
       <section class="section" id="settings">
         <div class="section-heading">
           <div>
@@ -138,14 +207,22 @@
         <div class="logs">
           <div class="log-entry">
             <span class="log-time">SYSTEM</span>
-            <span>Dashboard interface initialized.</span>
+            <span>PINoy CLIENT dashboard initialized.</span>
             <span class="log-info">INFO</span>
           </div>
+
+          <div class="log-entry">
+            <span class="log-time">NETWORK</span>
+            <span>Minecraft connection panel loaded.</span>
+            <span class="log-info">INFO</span>
+          </div>
+
           <div class="log-entry">
             <span class="log-time">SYSTEM</span>
             <span>Waiting for Android relay integration.</span>
             <span class="log-warning">WAIT</span>
           </div>
+
           <div class="log-entry">
             <span class="log-time">NETWORK</span>
             <span>No live connection data available.</span>
@@ -158,6 +235,7 @@
         PINOY CLIENT MOBILE <span>•</span> COMMUNITY DASHBOARD
         <p>Independent project. Not affiliated with Mojang or Microsoft.</p>
       </footer>
+
     </main>
   </div>
 
