@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d16">
+  <meta name="description" content="Pinoy Client Mobile Dashboard">
+  <title>PINOY CLIENT | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">G</div>
+        <div>
+          <h2>PINOY CLIENT</h2>
+          <span>MOBILE CONTROL</span>
+        </div>
+      </div>
+
+      <nav class="navigation">
+        <p class="nav-label">WORKSPACE</p>
+        <a class="nav-link active" href="#dashboard">▦ Dashboard</a>
+        <a class="nav-link" href="#monitor">◉ Connection Monitor</a>
+        <a class="nav-link" href="#relay">⌁ Relay</a>
+        <a class="nav-link" href="#settings">⚙ Settings</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <span class="status-dot"></span>
+        <span>WEB INTERFACE</span>
+        <small>v1.0</small>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">PINOY CLIENT / CONTROL CENTER</p>
+          <h1>Dashboard</h1>
+        </div>
+        <div class="top-status">
+          <span class="status-dot"></span>
+          DEMO MODE
+        </div>
+      </header>
+
+      <section class="welcome" id="dashboard">
+        <div>
+          <p class="eyebrow">MINECRAFT BEDROCK EDITION</p>
+          <h2>Welcome to <span>Pinoy Client.</span></h2>
+          <p>Monitor your mobile relay and connection status.</p>
+        </div>
+        <div class="welcome-mark">G</div>
+      </section>
+
+      <section class="section" id="monitor">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SYSTEM OVERVIEW</p>
+            <h2>Connection Monitor</h2>
+          </div>
+          <span class="offline-label">● OFFLINE</span>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="card-label">CLIENT STATUS</span>
+            <h3 class="value-offline">Disconnected</h3>
+            <p>Android relay connection</p>
+          </article>
+
+          <article class="stat-card">
+            <span class="card-label">RELAY STATUS</span>
+            <h3 class="value-neutral">Not connected</h3>
+            <p>Local proxy service</p>
+          </article>
+
+          <article class="stat-card">
+            <span class="card-label">UPTIME</span>
+            <h3>--:--:--</h3>
+            <p>Waiting for connection</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="relay">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">NETWORK INFORMATION</p>
+            <h2>Server & Relay</h2>
+          </div>
+        </div>
+
+        <div class="server-card">
+          <div class="server-header">
+            <div>
+              <span class="card-label">DESTINATION SERVER</span>
+              <h3>Lifeboat Network</h3>
+            </div>
+            <span class="server-tag">BEDROCK</span>
+          </div>
+
+          <div class="server-details">
+            <div>
+              <span>HOST</span>
+              <strong>play.lbsg.net</strong>
+            </div>
+            <div>
+              <span>PORT</span>
+              <strong>19132</strong>
+            </div>
+            <div>
+              <span>PROXY</span>
+              <strong>GatoRelay</strong>
+            </div>
+          </div>
+
+          <p class="server-note">
+            Server details are configured for reference.
+            This dashboard does not test the connection yet.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="settings">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ACTIVITY</p>
+            <h2>System Logs</h2>
+          </div>
+          <span class="demo-label">LOCAL DEMO</span>
+        </div>
+
+        <div class="logs">
+          <div class="log-entry">
+            <span class="log-time">SYSTEM</span>
+            <span>Dashboard interface initialized.</span>
+            <span class="log-info">INFO</span>
+          </div>
+          <div class="log-entry">
+            <span class="log-time">SYSTEM</span>
+            <span>Waiting for Android relay integration.</span>
+            <span class="log-warning">WAIT</span>
+          </div>
+          <div class="log-entry">
+            <span class="log-time">NETWORK</span>
+            <span>No live connection data available.</span>
+            <span class="log-warning">OFFLINE</span>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        PINOY CLIENT MOBILE <span>•</span> COMMUNITY DASHBOARD
+        <p>Independent project. Not affiliated with Mojang or Microsoft.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
